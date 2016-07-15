@@ -6,16 +6,14 @@ alias ll='ls -lahp'
 
 alias vi='vim'
 
-## Ruby & Rails ##
-alias be='bundle exec'
-
 ## Git ##
 alias ga='git add'
 alias gb='git branch'
-alias gch='git checkout'
-alias gcm='git commit'
 alias gd='git diff'
 alias gl='git log'
 alias gs='git status'
+alias gch='git checkout'
+alias gcm='git commit'
 alias gpull='git pull'
 alias gpush='git push'
+alias gcb='git status | head -n  1'

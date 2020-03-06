@@ -1,6 +1,9 @@
 ## Bash ##
 PS1="[\u: \W]$ "
 
+#############
+## Aliases ##
+#############
 alias cl='clear'
 
 alias l='ls -lhp'
@@ -17,13 +20,18 @@ alias gb='git branch'
 alias gch='git checkout'
 alias gcm='git commit'
 alias gd='git diff'
+alias gfa='git fetch --all'
 alias gl='git log'
+alias gll='git log --oneline'
 alias gs='git status'
 alias gpull='git pull'
 alias gpush='git push'
 alias gcb='git status | head -n  1'
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+alias gfp='gfa && gpull'
+alias gfpp='gfa -p && gpull'
+alias gmast='gcb && gch master && gfap && gch -'
 
-# for virtualenvwrapper
-export WORKON_HOME=~/Envs
+alias gsb='git_branches.sh .'
+
+alias myip="curl http://whatismyip.akamai.com/ ; echo"

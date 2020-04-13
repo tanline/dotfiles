@@ -23,11 +23,12 @@ alias gll='git log --oneline'
 alias gs='git status'
 alias gpull='git pull'
 alias gpush='git push'
+alias gpushfirst='git push -u origin'
 alias gcb='git status | head -n  1'
 
 alias gfp='gfa && gpull'
 alias gfpp='gfa -p && gpull'
-alias gmast='gcb && gch master && gfap && gch -'
+alias gmast='gcb && gch master && gfp && gch -'
 
 alias gsb='git_branches.sh .'
 

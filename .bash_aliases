@@ -29,6 +29,7 @@ alias gcb='git status | head -n  1'
 alias gfp='gfa && gpull'
 alias gfpp='gfa -p && gpull'
 alias gmast='gcb && gch master && gfp && gch -'
+alias gmain='gcb && gch main && gfp && gch -'
 
 alias gsb='git_branches.sh .'
 

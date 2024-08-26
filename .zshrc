@@ -68,13 +68,23 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
+plugins=(
+  fzf
+)
+
+# FZF plugin options
+export FZF_BASE="/opt/homebrew/bin/fzf"
+export FZF_DEFAULT_COMMAND="rg --files"
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 # export MANPATH="/usr/local/man:$MANPATH"
+
+#export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -85,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

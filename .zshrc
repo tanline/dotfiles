@@ -110,9 +110,8 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Load aliases file
-[ -s "$HOME/.dotfiles/.bash_aliases" ] && \. "$HOME/.dotfiles/.bash_aliases"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[ -s "$HOME/dotfiles/.bash_aliases" ] && \. "$HOME/dotfiles/.bash_aliases"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

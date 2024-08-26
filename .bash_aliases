@@ -29,7 +29,14 @@ alias gcb='git status | head -n  1'
 alias gfp='gfa && gpull'
 alias gfpp='gfa -p && gpull'
 alias gmast='gcb && gch master && gfp && gch -'
+alias gmain='gcb && gch main && gfp && gch -'
 
-alias gsb='git_branches.sh .'
+alias gsb='git_branches .'
 
-alias myip="curl http://whatismyip.akamai.com/ ; echo"
+alias myip='curl http://whatismyip.akamai.com/ ; echo'
+
+alias flw='less +F'
+
+if [ -f "$HOME/dotfiles/.work_aliases" ]; then
+  . "$HOME/dotfiles/.work_aliases"
+fi

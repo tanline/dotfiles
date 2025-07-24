@@ -40,3 +40,9 @@ alias flw='less +F'
 if [ -f "$HOME/dotfiles/.work_aliases" ]; then
   . "$HOME/dotfiles/.work_aliases"
 fi
+
+## MacOS Specific Aliases ##
+if [[ "$(uname)" == "Darwin" ]]; then
+  alias brewcheck='brew update && cl && brew outdated'
+  alias brewcaskcheck='brew update && cl && brew cask outdated'
+fi

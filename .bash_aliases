@@ -7,6 +7,7 @@ alias l='ls -lhp'
 alias ll='ls -lahp'
 
 alias vi='vim'
+alias vsc='code .'
 
 ## Ruby & Rails ##
 alias be='bundle exec'
@@ -44,5 +45,5 @@ fi
 ## MacOS Specific Aliases ##
 if [[ "$(uname)" == "Darwin" ]]; then
   alias brewcheck='brew update && cl && brew outdated'
-  alias brewcaskcheck='brew update && cl && brew cask outdated'
+  alias brewclean='brew cleanup'
 fi
